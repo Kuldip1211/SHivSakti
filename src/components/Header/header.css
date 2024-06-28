@@ -1,0 +1,64 @@
+.Header {
+  height: 34vw;
+  margin: 30px auto;
+  background-image: url("../../assets/header_img.jpg");
+  background-color: #747474;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.Header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  top: 50px;
+  background: transparent;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fedin 3s;
+}
+
+.Header-content h2 {
+  font-size: 500;
+  color: black;
+  font-size: max(4.5vw, 22px);
+}
+
+.Header-content p {
+  color: black;
+  font-size: 1vw;
+}
+
+.Header-content button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw 13px);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+
+  .Header-content {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .Header-content {
+    max-width: 55%;
+  }
+  .Header-content p {
+    display: none;
+  }
+  .Header-content button {
+    padding: 2vw 4vw;
+  }
+}
